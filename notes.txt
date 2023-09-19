@@ -1,13 +1,37 @@
 * What is difference between ~ and ^ symbol in package.json? :-> Suppose if any dependency version is ~2.9.0 with ~(tilde) sign attached for nex time to update it will take the major version of the dependency where as with the ^(caret) sign it will update the minor version which will be more useful.
 
-* What is package.json ? : -> Its a configuration file which keeps tracks of what version of package is installed in our system.
+* What is package.json ? : -> Its a configuration file which keeps tracks of what version of package is installed in our system. It can have ~ or ^.
 
 * What is package0lock.json ? : -> It keeps track of exact version that is been installed.
 
+* What is NPX? : -> It helps to execute the package.
+
 ### DEPENDENCIES TO INSTALL ###
 Bundlers --> 
-    PARCEL :--> 
-    WHat is Parcel> : Parcel is a zero configuration build tool for the web. It combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production application. 
-    Cmd to install Parcel : npm install -D parcel 
-    1. DEV Dependency -> Required for Development phase so that's why we use -D 
-    2. NORMAL Dependency -> Use for production
+	PARCEL :--> 
+		- Official Documentation of Parcel : https://parceljs.org/
+		- What is Parcel> : Parcel is a zero configuration build tool for the web. It combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production application. 
+		- Cmd to install Parcel : npm install -D parcel 
+			1. DEV Dependency -> Required for Development phase so that's why we use -D 
+			2. NORMAL Dependency -> Use for production
+		- Cmd to Ignite Parcel : npx parcel index.html
+		- It uses HMR : Hot Module Replacement.
+		- Creates a local server for use.
+		- It has File Matching Algorithm which is written in C++.
+		- Parcel gives faster builds as it is doing caching.
+		- Image Optimzation
+		- Minification
+		- Consistent Hashing
+		- Code Spliting
+		- Differential Bundling - To support of older Browsers
+		- Good Error Handling
+		- Tree Shaking -  Remove unused code
+-----------------------------------------------------------------------------------------------------------------------
+
+### STEPS TO INSTALL REACT ###
+	1. npm install react
+	2. npm install react-dom
+	use import React from "react" in App.js and start parcel and you will see error that Browser scripts cannpt have import or exports.
+	
+
+
